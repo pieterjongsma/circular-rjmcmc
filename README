@@ -1,0 +1,50 @@
+# DATA ARCHIVE
+
+Version of R and packages can be found in `VERSIONS` file.
+
+## Simulations
+### Generate simulation scenario's
+
+The simulation scenarios have been generated via a script. This script is called through
+
+    ./run_generate_scenarios.R
+    
+Note that the scenarios include random seeds and running this script will generate different seeds every time. For this reason, the scenarios/seeds used in the published material have been included in the data archive.
+
+### Execute simulation scenario's
+
+    ./run_evaluate_scenarios.R scenarios/uniform.RData results/uniform 1
+    ./run_evaluate_scenarios.R scenarios/single_component.RData results/uniform 1
+    ./run_evaluate_scenarios.R scenarios/two_components.RData results/uniform 1
+    ./run_evaluate_scenarios.R scenarios/two_components_opposite.RData results/uniform 1
+    ./run_evaluate_scenarios.R scenarios/three_components.RData results/uniform 1
+
+### Obtain summary information
+
+After executing the simulation scenarios, summaries can be obtained by executing
+
+    ./run_summarize_results.R
+    
+Which will output the summaries in the terminal. To dump the results in a file, use something like
+
+    ./run_summarize_results.R > results.txt
+    
+### Visualize convergence
+
+Convergence plots are rendered into `./figures` by running
+
+    ./run_visualize_convergence.R
+   
+    
+## 22tracks data
+### Visualize genres
+
+Kernel density estimates for genres are rendered into `./figures` by running
+
+    ./run_visualize_plays.R
+    
+### Evaluate plays
+
+The results in the paper can be reproduced by running
+
+    ./run_evaluate_plays.R

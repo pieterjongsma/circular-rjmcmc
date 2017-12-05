@@ -1,0 +1,15 @@
+R version 3.2.3 (2015-12-10)
+Platform: x86_64-apple-darwin14.5.0 (64-bit)
+Running under: OS X 10.11.4 (El Capitan)
+
+locale:
+[1] nl_NL.UTF-8/nl_NL.UTF-8/nl_NL.UTF-8/C/nl_NL.UTF-8/nl_NL.UTF-8
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  base     
+
+other attached packages:
+[1] stringr_1.0.0  Rcpp_0.12.4    xtable_1.8-2   circular_0.4-7 gtools_3.5.0  
+
+loaded via a namespace (and not attached):
+[1] magrittr_1.5  tools_3.2.3   stringi_1.0-1 methods_3.2.3 boot_1.3-18  
